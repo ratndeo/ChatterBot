@@ -1,0 +1,11 @@
+{
+  "conversations":[[
+    "what is temperature",
+    "temperature is {temperature}",
+    "what is day today?",
+    "it is {day}",
+    "what is {date}",
+    "what is current {location}"
+    ]
+  ]
+}
