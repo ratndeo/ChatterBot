@@ -5,7 +5,9 @@ import os
 action_map = {
     "date": "chatterbot.actions.get_date",
     "location": "chatterbot.actions.get_location",
-    "time": "chatterbot.actions.get_time"
+    "time": "chatterbot.actions.get_time",
+    "temperature": "chatterbot.actions.get_temperature",
+    "day":"chatterbot.actions.get_day"
 }
 
 
