@@ -25,6 +25,6 @@ class ActionAdapter(OutputAdapter):
                 if action_executor_s:
                     action_executor = import_module(action_executor_s)
                     token_response = action_executor()
-                    text.replace(token, token_response)
+                    text = text.replace(token, token_response)
 
         return self.delegate_adapter.process_response(Statement(text))

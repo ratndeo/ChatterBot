@@ -1,25 +1,11 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 import os
-from chatterbot.adapters.output.action_adapter import ActionAdapter
-
-
-def get_date():
-    from datetime import date
-    return date.today().strftime("%d-%m-%y")
-
-
-def get_location():
-    return "Bangalore"
-
-
-def get_time():
-    import time
-    return time.strftime("%H:%M:%S")
 
 action_map = {
-    "date": "example.get_date",
-    "location":"example.get_location"
+    "date": "chatterbot.actions.get_date",
+    "location": "chatterbot.actions.get_location",
+    "time": "chatterbot.actions.get_time"
 }
 
 
